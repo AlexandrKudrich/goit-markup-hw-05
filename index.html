@@ -40,9 +40,9 @@
         <ul class="site-nav list">
 
 
-        <li class="item"><a href="./index.html" class="link">Студия</a></li>
-        <li class="item"><a href="./portfolio.html"class="link">Портфолио</a></li>
-        <li class="item"><a href="Contacts"class="link">Контанкты</a></li>
+        <li class="item"><a href="./index.html" class="link-navi stud">Студия</a></li>
+        <li class="item"><a href="./portfolio.html"class="link-navi portf ">Портфолио</a></li>
+        <li class="item"><a href="Contacts"class="link-navi cont ">Контанкты</a></li>
 
         </ul>
 
@@ -83,12 +83,14 @@
 
         <h1 class="hero-title">Эффективные решения <br> для вашего бизнеса </br></h1>
 
-        <button class="hero-button"  type="button" value="Заказать услугу">Заказать услугу</button>
+        <button data-modal-open class="hero-button"  type="button" value="Заказать услугу" >Заказать услугу</button>
 
         </section>
 
     
-        
+        <div class="backdrop is-hidden" data-modal>
+            <div class="modal"> <button data-modal-close>x</button></div>
+        </div>
 
 
                                                                     <!-- section_about -->
@@ -152,7 +154,7 @@
         <ul class="list what-we-do">
 
             
-            <li class="what-we"><a  href="Web-sites"> <img class="img-what-we-do" src="./images/box1.jpg" width="370" alt="людина переносить з макету на папері у пк у вебформат html" /> </a>
+            <li class="what-we"><a class="img-what-we-do" href="Web-sites"> <img class="img-what-we-do" src="./images/box1.jpg" width="370" alt="людина переносить з макету на папері у пк у вебформат html" /> </a>
             <div class="thumb">
                 <p class="text-thumb">Десктопные приложения</p>
             </div> </li> 
@@ -175,6 +177,7 @@
 
         </section>
 
+            
     
 
 
@@ -562,6 +565,8 @@
 
 
         </footer>
+
+        <script src="./modal.js"></script>
 
         </body>
 
